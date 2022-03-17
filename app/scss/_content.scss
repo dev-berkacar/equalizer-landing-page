@@ -1,0 +1,385 @@
+@include Desktop {
+  .border {
+    height: 1100px;
+  }
+  .content {
+    position: absolute;
+    width: 65%;
+    left: 17%;
+    margin-top: 321px;
+    background: $navyBlue;
+    border-radius: 12px;
+    height: 600px;
+
+    &__panel {
+      position: absolute;
+      background: $orange;
+      border-radius: 12px;
+      width: 446px;
+      height: 535px;
+      left: 624px;
+      top: 122px;     
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        &__header {
+          color: $white;
+          font-size: 32px;
+        }
+
+        &__description {
+          color: $white;
+          padding-bottom: 36px;
+          padding-top: 12px;
+          font-size: 18px;
+        }
+
+        &__price {
+          display: flex;
+          align-items: center;
+          color: $white;
+          padding-bottom: 32px;
+
+          h2 {
+            color: $white;
+          }
+          
+          span {
+            font-size: 18px;
+            padding-left: 16px;
+          }
+        }
+
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+
+          &__ios {
+            background-color: $navyBlue;
+            border-color: $navyBlue;
+            border-radius: 10px;
+            color: $white;
+            padding: 15px 77px;
+            text-align: center;
+            margin-bottom: 16px;
+            &:hover {
+              background-color: $cyan;
+              border-color: $cyan;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-apple.svg');
+              background-repeat: no-repeat;
+              left: 148px;
+              top: 376px;
+              
+            }
+          }
+
+          &__android {
+            background-color: $white;
+            border-color: $white;
+            border-radius: 10px;
+            color: $navyBlue;
+            padding: 15px 77px;
+            text-align: center;
+            &:hover {
+              background-color: $yellow;
+              border-color: $yellow;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-android.svg');
+              background-repeat: no-repeat;
+              left: 132px;
+              top: 444px;
+            }
+          }
+        }
+      }
+    }
+
+    &__image-phone {
+      position: absolute;
+      width: 312px;
+      height: 642px;
+      bottom: 30%;
+      left: 10%;
+      z-index: 99;
+    }
+    
+    &__image-symbol {
+      position: absolute;
+      width: 312px;
+      height: 468px;
+      left: 387px;
+      bottom: 30%;
+    }
+  }
+}
+
+@include Tablet {
+  .border {
+    height: 1000px;
+  }
+  .content {
+    position: absolute;
+    width: 90%;
+    transform: translateX(7%);
+    margin-top: 249px;
+    background: $navyBlue;
+    border-radius: 12px;
+    height: 600px;
+
+    &__panel {
+      position: absolute;
+      background: $orange;
+      border-radius: 12px;
+      width: 399px;
+      height: 546px;
+      left: 243px;
+      top: 107px; 
+      z-index: 99;
+      &__main {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        &__header {
+          color: $white;
+          font-size: 32px;
+        }
+
+        &__description {
+          color: $white;
+          padding-bottom: 36px;
+          padding-top: 12px;
+          font-size: 18px;
+        }
+
+        &__price {
+          display: flex;
+          align-items: center;
+          color: $white;
+          padding-bottom: 32px;
+
+          h2 {
+            color: $white;
+          }
+          
+          span {
+            font-size: 18px;
+            padding-left: 16px;
+          }
+        }
+
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+
+          &__ios {
+            background-color: $navyBlue;
+            border-color: $navyBlue;
+            border-radius: 10px;
+            color: $white;
+            padding: 15px 77px;
+            text-align: center;
+            margin-bottom: 16px;
+            &:hover {
+              background-color: $cyan;
+              border-color: $cyan;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-apple.svg');
+              background-repeat: no-repeat;
+              left: 124px;
+              top: 410px;
+              
+            }
+          }
+
+          &__android {
+            background-color: $white;
+            border-color: $white;
+            border-radius: 10px;
+            color: $navyBlue;
+            padding: 15px 77px;
+            text-align: center;
+            &:hover {
+              background-color: $yellow;
+              border-color: $yellow;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-android.svg');
+              background-repeat: no-repeat;
+              left: 109px;
+              top: 478px;
+              
+            }
+          }
+        }
+      }    
+    }
+
+    &__image-phone {
+      position: absolute;
+      width: 270.21px;
+      height: 556px;
+      bottom: 38%;
+      left: 10%;
+      z-index: 98;
+    }
+
+    &__image-symbol {
+      position: absolute;
+      width: 280px;
+      height: 420px;
+      right: 178px;
+      bottom: 37%;
+    }
+  }
+}
+
+@include Mobile {
+  .border {
+    height: 1500px;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    margin-top: 249px;
+    background: $navyBlue;
+    border-radius: 12px;
+    height: 600px;
+
+    &__panel {
+      position: absolute;
+      background: $orange;
+      border-radius: 12px;
+      width: 375px;
+      height: 546px;
+      top: 379px;     
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        &__header {
+          color: $white;
+          font-size: 32px;
+        }
+
+        &__description {
+          color: $white;
+          padding-bottom: 36px;
+          padding-top: 12px;
+          font-size: 18px;
+        }
+
+        &__price {
+          display: flex;
+          align-items: center;
+          color: $white;
+          padding-bottom: 32px;
+
+          h2 {
+            color: $white;
+          }
+          
+          span {
+            font-size: 18px;
+            padding-left: 16px;
+          }
+        }
+
+        &__buttons {
+          display: flex;
+          flex-direction: column;
+
+          &__ios {
+            background-color: $navyBlue;
+            border-color: $navyBlue;
+            border-radius: 10px;
+            color: $white;
+            padding: 15px 77px;
+            text-align: center;
+            margin-bottom: 16px;
+            &:hover {
+              background-color: $cyan;
+              border-color: $cyan;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-apple.svg');
+              background-repeat: no-repeat;
+              left: 115px;
+              top: 410px;
+              
+            }
+          }
+
+          &__android {
+            background-color: $white;
+            border-color: $white;
+            border-radius: 10px;
+            color: $navyBlue;
+            padding: 15px 77px;
+            text-align: center;
+            &:hover {
+              background-color: $yellow;
+              border-color: $yellow;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background-image: url('/assets/icon-android.svg');
+              background-repeat: no-repeat;
+              left: 99px;
+              top: 478px;
+              
+            }
+          }
+        }
+      }
+    }
+
+    &__image-phone {
+      position: absolute;
+      width: 208.97px;
+      height: 430px;
+      bottom: 44%;
+      left: 20%;
+      z-index: 99;
+    }
+
+    &__image-symbol {
+      position: absolute;
+      width: 280px;
+      height: 420px;
+      right: 13%;
+    }
+  }
+}

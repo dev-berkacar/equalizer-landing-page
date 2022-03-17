@@ -1,0 +1,77 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  overflow: hidden;
+  line-height: 1.3;
+  background-color: $white;
+}
+
+main {
+  @include Desktop {
+    background-image: url('/assets/bg-main-desktop.png');
+    background-position-x: right;
+    background-position-y: 30%;
+    background-repeat: repeat-x;
+    background-size: 70%;
+  }
+
+  @include Tablet {
+    background-image: url('/assets/bg-main-tablet.png');
+    background-position-x: right;
+    background-position-y: 80%;
+    background-repeat: repeat-x;
+    background-size: 100%;
+  }
+  
+  @include Mobile {
+    background-image: url('/assets/bg-main-mobile.png');
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    background-size: 140%;
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: $font-xxxlarge;
+  font-weight: 700;
+  line-height: 1;
+  color: $navyBlue;
+}
+
+h2 {
+  margin: 0;
+  font-size: $font-xxlarge;
+  font-weight: 700;
+  line-height: 1;
+  color: $navyBlue;
+}
+
+h3 {
+  margin: 0;
+  font-size: $font-xlarge;
+  font-weight: 700;
+  line-height: 3.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: $font-large;
+  font-weight: 400;
+  line-height: 2.125rem;
+  color: $navyBlue;
+}

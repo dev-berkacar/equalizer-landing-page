@@ -1,0 +1,52 @@
+// Desktop
+@include Desktop {
+  header {
+    height: 222px;
+    .logo {
+      position: absolute;
+      top: 62px;
+      left: 166px;
+    }
+    
+    .pattern-top {
+      position: absolute;
+      right: 0;
+      top: -40px;
+    }
+  }
+}
+
+// Tablet
+@include Tablet {
+  header {
+    height: 190px;
+    .logo {
+      position: absolute;
+      top: 62px;
+      left: 39px;
+    }
+    
+    .pattern-top {
+      width: 266px;
+      height: 400px;
+      position: absolute;
+      right: -40px;
+      top: -40px;
+    }
+  }
+}
+
+@include Mobile {
+  header {
+    height: 144px;
+    .logo {
+      position: absolute;
+      top: 24px;
+      left: 39px;
+    }
+    
+    .pattern-top {
+      display: none;
+    }
+  }
+}

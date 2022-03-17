@@ -1,0 +1,45 @@
+// Desktop
+@include Desktop {
+  .main-title {
+    margin-left: 165px;
+    margin-right: 570px;
+    
+    &__header {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+// Tablet
+@include Tablet {
+  .main-title {
+    margin-left: 39px;
+    margin-right: 209px;
+
+    &__header {
+      font-size: $font-xxlarge;
+      padding-bottom: 28px;
+    }
+
+    &__description {
+      font-size: $font-medium;
+    }
+  }
+}
+
+// Mobile
+@include Mobile {
+  .main-title {
+    margin-left: 24px;
+    margin-right: 24px;
+
+    &__header {
+      font-size: $font-xlarge;
+      padding-bottom: 20px;
+    }
+
+    &__description {
+      font-size: $font-small;
+    }
+  }
+}
